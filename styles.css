@@ -1,0 +1,44 @@
+body {
+  margin: 5px;
+  background: lightyellow;
+}
+
+.main-container {
+  max-width: 600px;
+  min-width: 200px;
+  padding: 10px 40px;
+  background: lightskyblue;
+  border-radius: 25px;
+  margin: auto;
+}
+
+main input {
+  width: 400px;
+}
+
+section input {
+  border: 1px solid black;
+  padding: 5px;
+  width: 100px;
+  margin: 0 10px;
+}
+
+section p {
+  font-size: 0.8em;
+  margin: 0 20px;
+}
+
+section select {
+  font-size: 1em;
+}
+
+.balance_container {
+  border: solid 2px royalblue;
+  width: 300px;
+  padding: 15px;
+  color: royalblue;
+}
+
+footer {
+  margin-top: 50px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balance Checker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div>
+      <h1>BITCOIN BALANCE CHECKER:</h1>
+      <main>
+        <label for="input">INSERT YOUR BITCOIN PUBLIC ADDRESS HERE: </label>
+        <br>
+        <input type="text" id="input" oninput="foo()">
+        <small>
+          <p>
+            <i>You can test the data with this address: 1BqWvyV7rsZxrv2Ag1KCpb3WD1P3efgcz</i>
+          </p>
+        </small>
+        <p>Your wallet address is: <span id="address"></span></p>
+        <p>Value from: <span id="address-value"></span></p>
+        <p>Link to the api.blockcypher result:
+          <a id="link" targe="_blank">Link</a>
+        </p>
+        <div class="balance_container">
+          <h3>Balance:</h3>
+          <p><b><span id="result">0</span> Satoshis</b></p>
+          <p><b><span id="result_BTC">0</span> BTC</b></p>
+        </div>
+      </main>
+      <hr/>
+      <section class="converter">
+        <div>
+          <h2>Crypto Converter</h2>
+        </div>
+        <div>
+          <input type="text" id="input-a" oninput="convert()">
+          <select name="crypto-a" id="crypto-a" onchange="selection('a')" oninput="convert()">
+            <option value="bitcoin" selected>Bitcoin</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="litecoin">Litecoin</option>
+            <option value="bitcoin-cash">Bitcoin Cash</option>
+          </select>
+          <p>Selected: <b id="selected-a"></b></p>
+
+          <p>=</p>
+          <input type="text" id="input-b" disabled>
+          <select name="crypto-b" id="crypto-b" onchange="selection('b')" oninput="convert()">
+            <option value="bitcoin" selected>Bitcoin</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="litecoin">Litecoin</option>
+            <option value="bitcoin-cash">Bitcoin Cash</option>
+            <option value="eur">Euro</option>
+            <option value="usd">USD</option>
+          </select>
+          <p>Selected: <b id="selected-b"></b></p>
+        </div>
+      </section>
+
+
+      <footer>
+        <p>Made by
+          <a href="https://juanjosemora.es" target="_blank">JJM</a>
+        </p>
+        <p>Powered by
+          <a href="https://blockcypher.com" target="_blank">Blockcypher API</a>
+        </p>
+      </footer>
+    </div>
+  </div>
+
+</body>
+
+</html>
